@@ -1,5 +1,12 @@
-export function App() {
-  return <div>initial setup</div>
-}
+import { ThemeProvider } from 'styled-components'
+import { GlobalStyles } from './styles/global'
+import { defaultTheme } from './styles/themes/default'
 
-export default App
+export function App() {
+  return (
+    <ThemeProvider theme={defaultTheme}>
+      <div>initial setup</div>
+      <GlobalStyles />
+    </ThemeProvider>
+  )
+}
