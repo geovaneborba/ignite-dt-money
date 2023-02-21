@@ -1,0 +1,44 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de Site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "2023-02-14T04:58:03.226Z"
+    },
+    {
+      "id": 2,
+      "description": "Hambúrguer",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 50,
+      "createdAt": "2023-02-13T04:58:03.226Z"
+    },
+    {
+      "category": "Curso",
+      "description": "React",
+      "price": 1700,
+      "type": "income",
+      "createdAt": "2023-02-17T17:29:39.154Z",
+      "id": 3
+    },
+    {
+      "category": "Compra",
+      "description": "Lunchtray",
+      "price": 344,
+      "type": "outcome",
+      "createdAt": "2023-02-17T17:30:47.164Z",
+      "id": 4
+    },
+    {
+      "category": "teste",
+      "description": "teste",
+      "price": 999,
+      "type": "outcome",
+      "createdAt": "2023-02-17T17:46:03.219Z",
+      "id": 5
+    }
+  ]
+}
