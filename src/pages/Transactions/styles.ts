@@ -6,7 +6,11 @@ export const TransactionContainer = styled.main`
   margin: 4rem auto 0;
   padding: 0 1.5rem;
 `
-
+export const TransactionsTableContainer = styled.div`
+  overflow-x: auto;
+  border-radius: 6px;
+  margin-bottom: 5rem;
+`
 export const TransactionsTable = styled.table`
   width: 100%;
   border-collapse: separate;
@@ -26,6 +30,10 @@ export const TransactionsTable = styled.table`
       border-top-right-radius: 6px;
       border-bottom-right-radius: 6px;
     }
+  }
+
+  @media ((min-width: 320px) and (max-width: 425px)) {
+    overflow: scroll;
   }
 `
 interface PriceHighlightProps {

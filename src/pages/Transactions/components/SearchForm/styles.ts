@@ -42,4 +42,19 @@ export const SearchFormContainer = styled.form`
       transition: background-color 0.2s, color 0.2s, border-color 0.2s;
     }
   }
+
+  @media ((min-width: 320px) and (max-width: 425px)) {
+    width: 100%;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+
+    input {
+      width: 50px;
+    }
+
+    button {
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+    }
+  }
 `

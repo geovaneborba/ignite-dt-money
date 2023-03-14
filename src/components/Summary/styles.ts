@@ -11,6 +11,15 @@ export const SummaryContainer = styled.section`
   gap: 2rem;
 
   margin-top: -5rem;
+
+  @media ((min-width: 320px) and (max-width: 640px)) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media ((min-width: 640px) and (max-width: 768px)) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `
 
 interface SummaryCardProps {
@@ -40,4 +49,14 @@ export const SummaryCard = styled.div<SummaryCardProps>`
     css`
       background: ${(props) => props.theme['green-700']};
     `}
+
+  @media ((min-width: 320px) and (max-width: 640px)) {
+    width: 100%;
+  }
+
+  @media ((min-width: 640px) and (max-width: 768px)) {
+    &:last-child {
+      grid-column: span 2;
+    }
+  }
 `

@@ -8,6 +8,7 @@ import {
   PriceHighlight,
   TransactionContainer,
   TransactionsTable,
+  TransactionsTableContainer,
 } from './styles'
 
 export function Transaction() {
@@ -16,31 +17,35 @@ export function Transaction() {
     (context) => context.transactions
   )
   return (
-    <div>
+    <>
       <Header />
       <Summary />
 
       <TransactionContainer>
         <SearchForm />
 
-        <TransactionsTable>
-          <tbody>
-            {transactions.map((transaction) => (
-              <tr key={transaction.id}>
-                <td>{transaction.description}</td>
-                <td>
-                  <PriceHighlight variant={transaction.type}>
-                    {transaction.type === 'outcome' && '- '}
-                    {priceFormatter.format(transaction.price)}
-                  </PriceHighlight>
-                </td>
-                <td>{transaction.category}</td>
-                <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
-              </tr>
-            ))}
-          </tbody>
-        </TransactionsTable>
+        <TransactionsTableContainer>
+          <TransactionsTable>
+            <tbody>
+              {transactions.map((transaction) => (
+                <tr key={transaction.id}>
+                  <td>{transaction.description}</td>
+                  <td>
+                    <PriceHighlight variant={transaction.type}>
+                      {transaction.type === 'outcome' && '- '}
+                      {priceFormatter.format(transaction.price)}
+                    </PriceHighlight>
+                  </td>
+                  <td>{transaction.category}</td>
+                  <td>
+                    {dateFormatter.format(new Date(transaction.createdAt))}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </TransactionsTable>
+        </TransactionsTableContainer>
       </TransactionContainer>
-    </div>
+    </>
   )
 }
