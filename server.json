@@ -20,25 +20,9 @@
       "category": "Curso",
       "description": "React",
       "price": 1700,
-      "type": "income",
+      "type": "outcome",
       "createdAt": "2023-02-17T17:29:39.154Z",
       "id": 3
-    },
-    {
-      "category": "Compra",
-      "description": "Lunchtray",
-      "price": 344,
-      "type": "outcome",
-      "createdAt": "2023-02-17T17:30:47.164Z",
-      "id": 4
-    },
-    {
-      "category": "teste",
-      "description": "teste",
-      "price": 999,
-      "type": "outcome",
-      "createdAt": "2023-02-17T17:46:03.219Z",
-      "id": 5
     }
   ]
 }
